@@ -1,0 +1,12 @@
+
+.navlink{
+  margin-left: 20px;
+  color:rgb(117, 115, 115);
+  font-size: 16px;
+  text-decoration: none;
+  line-height: 40px;
+}
+.navlink:hover{
+  color:black;
+  border-bottom: 1px solid rgb(156, 151, 151);
+}

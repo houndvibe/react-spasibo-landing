@@ -1,0 +1,47 @@
+.header{
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 116px;
+}
+.headerContent{
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo{
+  height: 100%;
+padding-top: 10px;
+}
+.header__links{
+  margin-top: 10px;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  width: 55%;
+  padding-left: 20px;
+}
+
+.vidgets{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.vidgets__top{
+  margin-top: 4px;
+  display: flex;
+  justify-content: flex-end;
+}
+.vidgets__bottom{
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.search{
+  margin-right: 14px;
+  margin-top:5px
+}

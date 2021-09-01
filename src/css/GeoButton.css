@@ -1,0 +1,14 @@
+.geobutton{
+  display: flex;
+  align-items: center;
+  color:rgb(117, 115, 115);
+  background: none;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 1px;
+}
+.geobutton:hover{
+  color:black
+}
+
