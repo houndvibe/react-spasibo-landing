@@ -1,0 +1,24 @@
+.navbutton{
+  border-radius: 8px;
+  border:none;
+  color:black;
+  background: #FFFFFF;
+  font-size: 15px;
+  line-height: 22px;
+  padding: 8px 15px;
+  cursor:pointer;
+  margin-right: 10px;
+  margin-top:6px;
+}
+.navbutton:hover{
+  color:white;
+  background: #00D36D;
+}
+.active{
+  color:white;
+  background: #00D36D;
+}
+.active:hover{
+  color:black;
+  background: #FFFFFF;
+}

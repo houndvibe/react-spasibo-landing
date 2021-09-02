@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 116px;
+  height: 104px;
 }
 .headerContent{
   height: 90px;
@@ -13,7 +13,7 @@
 }
 .logo{
   height: 100%;
-padding-top: 10px;
+  padding-top: 10px;
 }
 .header__links{
   margin-top: 10px;

@@ -1,0 +1,30 @@
+.offer{
+  display: flex;
+  flex-direction: column;
+  width: 330px;
+}
+.prev_img{
+  width: 330px;
+  height: 210px;
+}
+.logo_img{
+  width: 44px;
+  height: 44px;
+}
+.offer__info{
+  display: flex;
+  padding-top: 10px;
+}
+.offer__details{
+display: flex;
+flex-direction: column;
+padding-left: 10px;
+}
+.offer__name{
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.486);
+}
+.offer__text{
+  padding-top: 4px;
+  font-size: 16px;
+}

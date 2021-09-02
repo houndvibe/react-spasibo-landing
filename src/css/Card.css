@@ -1,0 +1,35 @@
+.card{
+  background: white;
+  border-radius: 10px;
+  height: 230px;
+  width: 160px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.number{
+  font-size: 24px;
+  font-weight: 500;
+  width: 100%;
+  align-self: flex-start;
+}
+.logoWrapper{
+  display: flex;
+  justify-content: center;
+}
+.text{
+  width: 100%;
+  color:grey;
+  font-size:10px;
+}
+.name{
+  color:grey;
+  font-size:14px;
+  font-weight: 500;
+  margin-top: 40px;
+}
+.logo{
+  width: 120px;
+  height: 120px;
+}
