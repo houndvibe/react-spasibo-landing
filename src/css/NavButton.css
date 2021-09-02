@@ -14,11 +14,11 @@
   color:white;
   background: #00D36D;
 }
-.active{
+.navbutton-active{
   color:white;
   background: #00D36D;
 }
-.active:hover{
+.navbutton-active:hover{
   color:black;
   background: #FFFFFF;
 }

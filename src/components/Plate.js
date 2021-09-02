@@ -3,7 +3,7 @@ import '../css/Plate.css'
 
 const Plate = ({ text, content }) => {
 
-  const cls = ['plate']
+  let cls = ['plate']
   content.length === 5 ? cls.push('long') : cls.push('short')
 
   return (

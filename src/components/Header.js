@@ -5,10 +5,31 @@ import HeaderLink from './HeaderLink';
 import Button from './UI/Button';
 import GeoButton from './UI/GeoButton';
 import SearchButton from './UI/SearchButton';
+import { connect } from 'react-redux'
+import CityPopup from './CityPopup';
+import {
+  onShowCityPopup,
+  onHideCityPopup,
+  onSearchOn,
+  onSearchOff
+} from '../store/actions'
+import SearchPopup from './SearchPopup';
 
-const Header = (props) => {
+
+const Header = ({
+  onShowCityPopup,
+  onHideCityPopup,
+  isCitySelectPopupVisible,
+  currentCity,
+  onSearchOn,
+  onSearchOff,
+  isSearchActive
+}) => {
   return (
-    <div className='header'>
+    <div
+      className='header'
+      onClick={isCitySelectPopupVisible ? onHideCityPopup : null}
+    >
       <div className='headerContent'>
         <div className='logo'>
           <img src={logo} alt='logo' />
@@ -29,11 +50,14 @@ const Header = (props) => {
 
         <div className='vidgets'>
           <div className='vidgets__top'>
-            <GeoButton currentCity={'Санкт-Петербург'} />
+            <GeoButton
+              currentCity={'Санкт-Петербург'}
+              onClick={onShowCityPopup}
+            />
           </div>
           <div className='vidgets__bottom'>
             <div className='search'>
-              <SearchButton />
+              <SearchButton onClick={onSearchOn} />
             </div>
             <div className='logIn'>
               <Button title={'Войти'} />
@@ -41,9 +65,35 @@ const Header = (props) => {
           </div>
         </div>
       </div>
-
-    </div>
+      <CityPopup
+        isVisible={isCitySelectPopupVisible}
+        currentCity={currentCity}
+        onClick={onHideCityPopup}
+      />
+      <SearchPopup
+        isVisible={isSearchActive}
+        onClose={onSearchOff}
+      />
+    </div >
   );
 }
 
-export default Header;
+const mapStateToProps = (state) => ({
+  isCitySelectPopupVisible: state.isCitySelectPopupVisible,
+  currentCity: state.currentCity,
+  isSearchActive: state.isSearchActive
+});
+
+const mapDispatchToProps = (dispatch) => ({
+  onShowCityPopup: () => dispatch(onShowCityPopup()),
+  onHideCityPopup: () => dispatch(onHideCityPopup()),
+  onSearchOn: () => dispatch(onSearchOn()),
+  onSearchOff: () => dispatch(onSearchOff())
+});
+
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Header);
+

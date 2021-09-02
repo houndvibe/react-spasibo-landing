@@ -1,4 +1,10 @@
 .emptyRoutePage{
   background:#E5E5E5;
   height: 370px;
+  font-size: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.603);
+  font-weight: 500;
 }

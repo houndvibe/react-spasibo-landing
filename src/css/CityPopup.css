@@ -1,0 +1,27 @@
+.cityPopup{
+  padding: 20px;
+
+  background: white;
+  border-radius: 10px;
+  width: 260px;
+  height: 70px;
+  position: absolute;
+  top: 50px;
+  right: 114px;
+  display: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.cityPopup_active{
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+}
+.cityPopup_buttons{
+  display: flex;
+  justify-content:space-between;
+  width: 220px;
+}
+.cityPopup_text-bold{
+  font-weight: 500;
+}

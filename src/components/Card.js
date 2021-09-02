@@ -11,7 +11,7 @@ const Card = ({ percent, logo, name }) => {
         Спасибо от суммы покупки
       </div>
       <div className='logoWrapper' >
-        <img src={logo} alt='logo' className='logo' />
+        <img src={logo} alt='logo' className='card__logo' />
       </div>
       <div className='name' >
         {name}

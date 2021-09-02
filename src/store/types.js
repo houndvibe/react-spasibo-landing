@@ -1,1 +1,4 @@
-export const ON_SOME = 'ON_SOME'
+export const ON_SHOW_CITY_POPUP = 'ON_SHOW_CITY_POPUP'
+export const ON_HIDE_CITY_POPUP = 'ON_HIDE_CITY_POPUP'
+export const ON_SEARCH_ON = 'ON_HIDE_ON'
+export const ON_SEARCH_OFF = 'ON_HIDE_OFF'

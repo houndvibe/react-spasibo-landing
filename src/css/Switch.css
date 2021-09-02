@@ -47,7 +47,7 @@
 }
 
 input:checked + .slider {
-  background-color: #2196F3;
+  background-color: #ffffff;
 }
 
 input:focus + .slider {
@@ -67,4 +67,8 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+.switch__text-active{
+  color:rgba(0, 211, 109, 1)
 }

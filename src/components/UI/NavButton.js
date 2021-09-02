@@ -3,7 +3,7 @@ import '../../css/NavButton.css'
 
 const NavButton = ({ title, active }) => {
   const cls = ['navbutton']
-  active && cls.push('active')
+  active && cls.push('navbutton-active')
   return (
     <div className='navbuttonWrapper'>
       <button className={cls.join(' ')}>

@@ -32,12 +32,16 @@ import tez_plate from '../assets/img/plate_img/tez_plate.png'
 import sb_plate from '../assets/img/plate_img/sb_plate.png'
 import oz_plate from '../assets/img/plate_img/oz_plate.png'
 import tr_plate from '../assets/img/plate_img/tr_plate.png'
+import { connect } from 'react-redux'
+import { onHideCityPopup } from '../store/actions'
 
 
-
-const PartnersPage = (props) => {
+const PartnersPage = ({ onHideCityPopup, isCitySelectPopupVisible }) => {
   return (
-    <div className='partnersPage'>
+    <div
+      className='partnersPage'
+      onClick={isCitySelectPopupVisible ? onHideCityPopup : null}
+    >
       <div className='partnersPage__content'>
         <div className='title'>
           Партнеры и предложения
@@ -119,4 +123,17 @@ const PartnersPage = (props) => {
   );
 }
 
-export default PartnersPage;
+const mapStateToProps = (state) => ({
+  isCitySelectPopupVisible: state.isCitySelectPopupVisible,
+  currentCity: state.currentCity
+});
+
+const mapDispatchToProps = (dispatch) => ({
+  onHideCityPopup: () => dispatch(onHideCityPopup()),
+});
+
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(PartnersPage);

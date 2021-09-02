@@ -1,0 +1,46 @@
+.searchPopupBackground{
+  display: none;
+  background: rgba(0, 0, 0, 0.479);
+  width: 100vw;
+  height: 700vh;
+  position: absolute;
+  z-index: 1;
+}
+.searchPopup{
+  display: none;
+  color:rgba(0, 0, 0, 0.1);
+  padding: 6px 20px;
+  width: 260px;
+  height: 40px;
+  position: absolute;
+  right: 200px;
+  top: 50px;
+  background: rgb(255, 255, 255);
+  z-index: 2;
+}
+.searchPopup__border{
+  padding: 2px;
+  display: flex;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+.searcPopup__input{
+  width: 250px;
+  list-style: none;
+  outline: none;
+  border:none;
+  font-size:16px
+}
+.searchPopup__img{
+  margin-left: 20px;
+  margin-top: 4px;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+
+.searchPopupBackground-active{
+  display: block;
+}
+.searchPopup-active{
+  display: block;
+}
