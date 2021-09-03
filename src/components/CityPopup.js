@@ -1,6 +1,6 @@
 import React from 'react';
-import '../css/CityPopup.css'
 import Button from './UI/Button';
+import '../css/CityPopup.css'
 
 const CityPopup = ({ isVisible, currentCity, onClick }) => {
 
@@ -9,13 +9,22 @@ const CityPopup = ({ isVisible, currentCity, onClick }) => {
 
   return (
     <div className={cls.join(' ')}>
+
       <div className='cityPopup_text'>
         Ваш город - <span className='cityPopup_text-bold'>{`${currentCity}`}</span>?
       </div>
+
       <div className='cityPopup_buttons'>
-        <Button title={'Да'} onClick={onClick} />
-        <Button title={'Сменить город'} onClick={() => alert('В данный момент функция не доступна')} />
+        <Button
+          title={'Да'}
+          onClick={onClick}
+        />
+        <Button
+          title={'Сменить город'}
+          onClick={() => alert('В данный момент функция не доступна')}
+        />
       </div>
+
     </div>
   );
 }

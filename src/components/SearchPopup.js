@@ -16,8 +16,8 @@ const SearchPopup = ({ isVisible, onClose }) => {
 
   return (
     <>
-      <div className={backgroundCls.join(' ')} onClick={onClose}>
-      </div>
+      <div className={backgroundCls.join(' ')} onClick={onClose}></div>
+
       <div className={popupCls.join(' ')}>
         <div className='searchPopup__border'>
           <input

@@ -1,22 +1,36 @@
 import React from 'react';
 import '../css/Plate.css'
 
-const Plate = ({ text, content }) => {
+const Plate = ({
+  text,
+  content,
+  onClick
+}) => {
 
   let cls = ['plate']
-  content.length === 5 ? cls.push('long') : cls.push('short')
+  content.length === 5
+    ? cls.push('long')
+    : cls.push('short')
 
   return (
     <div className='plateWrapper'>
+
       <div className={cls.join(' ')}>
         <div className='plate__top'>
           {content.map(src => {
             return (
-              <img src={src} alt='logo' className='plate__img' key={Math.random() + src} />
+              <img
+                src={src}
+                alt='logo'
+                className='plate__img'
+                key={Math.random() + src}
+                onClick={onClick}
+              />
             )
           })}
         </div>
       </div>
+
       <div className='plate__bottom'>
         <div className=' rounding rounding-left'>
           {'...'}
@@ -28,6 +42,7 @@ const Plate = ({ text, content }) => {
           {'...'}
         </div>
       </div>
+
     </div>
   );
 }

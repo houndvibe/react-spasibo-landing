@@ -1,0 +1,12 @@
+.breadcrumb{
+  font-size: 13px;
+  color:rgba(0, 0, 0, 0.575)
+}
+.breadcrumb__link{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.041);
+  padding-bottom: 2px;
+  cursor: pointer;
+}
+.breadcrumb__link:hover{
+  color: black;
+}

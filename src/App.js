@@ -12,12 +12,15 @@ import HotelsPage from './components/EmptyRoutesPages/HotelsPage'
 import CarsharingPage from './components/EmptyRoutesPages/CarsharingPage'
 import InsurancePage from './components/EmptyRoutesPages/InsurancePage'
 import TicketsPage from './components/EmptyRoutesPages/TicketsPage'
+import ActionPage from './components/ActionPage';
 import './css/App.css';
+
 
 const App = (props) => {
   const routes = (
     <Switch>
       <Route path="/" exact component={PartnersPage} />
+      <Route path="/ACTION" exact component={ActionPage} />
       <Route path="/coupons" exact component={CouponsPage} />
       <Route path="/impressions" exact component={ImpressionsPage} />
       <Route path="/flights" exact component={FlightsPage} />

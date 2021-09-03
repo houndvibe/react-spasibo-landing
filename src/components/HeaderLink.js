@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import '../css/HeaderLink.css'
 
 const HeaderLink = ({ title, path }) => {
+
   return (
     <div className='headerlink'>
       <NavLink to={path} className='navlink'>
@@ -10,6 +11,7 @@ const HeaderLink = ({ title, path }) => {
       </NavLink>
     </div>
   );
+
 }
 
 export default HeaderLink;

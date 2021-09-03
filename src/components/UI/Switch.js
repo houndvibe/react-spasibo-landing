@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import '../../css/Switch.css'
 
 const Switch = ({ leftText, rightText }) => {
+
   const clsLeft = ['switch__text']
   const clsRight = ['switch__text']
 
@@ -17,7 +18,11 @@ const Switch = ({ leftText, rightText }) => {
         {leftText}
       </div>
       <label class="switch__label">
-        <input type="checkbox" checked={isChecked} onChange={() => setIsChecked(!isChecked)} />
+        <input
+          type="checkbox"
+          checked={isChecked}
+          onChange={() => setIsChecked(!isChecked)}
+        />
         <span class="slider round"></span>
       </label>
       <div className={clsRight.join(' ')}>
