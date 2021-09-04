@@ -1,37 +1,35 @@
 .card{
-  cursor: pointer;
-  background: white;
-  border-radius: 10px;
-  height: 230px;
-  width: 160px;
-  padding: 14px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 240px;
+  width: 160px;
+  background: white;
+  border-radius: 10px;
+  padding: 14px;
+  cursor: pointer;
 }
-.number{
+
+.card__number{
+  align-self: flex-start;
   font-size: 24px;
   font-weight: 500;
   width: 100%;
-  align-self: flex-start;
 }
-.logoWrapper{
-  display: flex;
-  justify-content: center;
-}
-.text{
+
+.card__text{
   width: 100%;
   color:grey;
   font-size:10px;
 }
-.name{
+
+.card__logo{
+  display: flex;
+  justify-content: center;
+}
+
+.card__name{
   color:grey;
   font-size:14px;
   font-weight: 500;
-  margin-top: 40px;
-}
-.card__logo{
-  margin-top: 20px;
-  width: 120px;
-  height: 120px;
 }

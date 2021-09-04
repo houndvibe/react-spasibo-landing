@@ -5,8 +5,12 @@ import '../../css/GeoButton.css'
 const GeoButton = ({ currentCity, onClick }) => {
 
   return (
-    <div className='geobutton' onClick={onClick}>
-      <img src={IconGeo} alt='geo' />
+    <div className='button-geo' onClick={onClick}>
+      <img
+        className='img-geo'
+        src={IconGeo}
+        alt='geo'
+      />
       {currentCity}
     </div>
   );

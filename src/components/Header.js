@@ -5,8 +5,8 @@ import HeaderLink from './HeaderLink';
 import Button from './UI/Button';
 import GeoButton from './UI/GeoButton';
 import SearchButton from './UI/SearchButton';
-import SearchPopup from './SearchPopup';
-import CityPopup from './CityPopup';
+import SearchModal from './SearchModal';
+import CityModal from './CityModal';
 import {
   onShowCityPopup,
   onHideCityPopup,
@@ -31,13 +31,13 @@ const Header = ({
       className='header'
       onClick={isCitySelectPopupVisible ? onHideCityPopup : null}
     >
-      <div className='headerContent'>
+      <div className='header__content'>
 
-        <div className='logo'>
+        <div className='header__logo'>
           <img src={logo} alt='logo' />
         </div>
 
-        <div className='header__links'>
+        <div className='header__navigation mt10'>
           <HeaderLink title={'Купоны и сертификаты'} path={'/coupons'} />
           <HeaderLink title={'Впечатления'} path={'/impressions'} />
           <HeaderLink title={'Авиабилеты'} path={'/flights'} />
@@ -50,20 +50,20 @@ const Header = ({
           <HeaderLink title={'Партнеры'} path={'/'} />
         </div>
 
-        <div className='vidgets'>
+        <div className='header__vidgets'>
 
-          <div className='vidgets__top'>
+          <div className='header__vidgets-top'>
             <GeoButton
               currentCity={'Санкт-Петербург'}
               onClick={onShowCityPopup}
             />
           </div>
 
-          <div className='vidgets__bottom'>
+          <div className='header__vidgets-bottom mt10'>
             <div className='search'>
               <SearchButton onClick={onSearchOn} />
             </div>
-            <div className='logIn'>
+            <div className='login'>
               <Button
                 title={'Войти'}
                 onClick={() => alert('Невозможно выполнить вход в демо режиме')}
@@ -75,13 +75,13 @@ const Header = ({
 
       </div>
 
-      <CityPopup
+      <CityModal
         isVisible={isCitySelectPopupVisible}
         currentCity={currentCity}
         onClick={onHideCityPopup}
       />
 
-      <SearchPopup
+      <SearchModal
         isVisible={isSearchActive}
         onClose={onSearchOff}
       />

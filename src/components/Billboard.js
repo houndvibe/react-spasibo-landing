@@ -10,7 +10,7 @@ const Billboard = ({ data }) => {
 
       <div className='billboard__poster'>
         <img
-          className='poster'
+          className='img-poster'
           src={content.poster}
           alt='poster'
         />
@@ -22,14 +22,14 @@ const Billboard = ({ data }) => {
 
       <div className='billboard__text'>
 
-        <div className='billboard__profits'>
-          <div className='profits__title'>
+        <div className='billboard__profits text-wide mt20'>
+          <div className='billboard__profits__title'>
             {content.text.profits.title}
           </div>
-          <ul className='profits__items'>
+          <ul className='billboard__profits__list'>
             {content.text.profits.items.map((item) => {
               return (
-                <li className='profits__item'>
+                <li className='billboard__profits__item'>
                   {item}
                 </li>
               )
@@ -37,14 +37,14 @@ const Billboard = ({ data }) => {
           </ul>
         </div>
 
-        <div className='billboard__howToUse'>
-          <div className='howToUse__title'>
+        <div className='billboard__usage text-wide mt20'>
+          <div className='billboard__usage__title'>
             {content.text.howToUse.title}
           </div>
-          <ul className='howToUse__items'>
+          <ul className='billboard__usage__list'>
             {content.text.howToUse.items.map((item, index) => {
               return (
-                <li className='howToUse__item'>
+                <li className='billboard__usage__item'>
                   {`${index + 1}.` + item}
                 </li>
               )
@@ -52,15 +52,15 @@ const Billboard = ({ data }) => {
           </ul>
         </div>
 
-        <div className='billboard__info'>
+        <div className='billboard__info text-regular mt20'>
           {content.text.info}
         </div>
 
-        <div className='billboard__links'>
+        <div className='billboard__links mt20'>
           {content.text.links.map(item => {
             return (
-              <div className='billboard__linkWrapper'>
-                <a href={item.src} className='billboard__link'>
+              <div className='link-wrapper mt20'>
+                <a href={item.src} className='link'>
                   {item.title}
                 </a>
               </div>
@@ -68,7 +68,7 @@ const Billboard = ({ data }) => {
           })}
         </div>
 
-        <div className='billboard__terms'>
+        <div className='billboard__terms text-xs mt50'>
           {content.text.terms}
         </div>
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import PartnersPage from './components/PartnersPage'
+import PartnersPage from './components/Pages/PartnersPage'
 import { Route, Switch } from 'react-router-dom'
 import CouponsPage from './components/EmptyRoutesPages/CouponsPage'
 import ImpressionsPage from './components/EmptyRoutesPages/ImpressionsPage'
@@ -12,7 +12,7 @@ import HotelsPage from './components/EmptyRoutesPages/HotelsPage'
 import CarsharingPage from './components/EmptyRoutesPages/CarsharingPage'
 import InsurancePage from './components/EmptyRoutesPages/InsurancePage'
 import TicketsPage from './components/EmptyRoutesPages/TicketsPage'
-import ActionPage from './components/ActionPage';
+import ActionPage from './components/Pages/ActionPage';
 import './css/App.css';
 
 

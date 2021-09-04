@@ -29,13 +29,13 @@ export const Footer = (props) => {
             <img src={SberLogo} alt='sberlogo' />
           </div>
 
-          <div className='copyright'>
+          <div className='footer__copyright'>
             © 1997—2019 ПАО Сбербанк.
           </div>
         </div>
 
         <div className='footer__right'>
-          <div className='footer__links'>
+          <div className='footer__navigation'>
             <HeaderLink title={'Купоны и сертификаты'} path={'/coupons'} />
             <HeaderLink title={'Впечатления'} path={'/impressions'} />
             <HeaderLink title={'Авиабилеты'} path={'/flights'} />
@@ -48,7 +48,7 @@ export const Footer = (props) => {
             <HeaderLink title={'Партнеры'} path={'/'} />
           </div>
 
-          <div className='socials'>
+          <div className='footer__socials'>
             <div className='socials__stores'>
               <GooglePlayButton />
               <AppStoreButton />
@@ -61,7 +61,7 @@ export const Footer = (props) => {
             </div>
           </div>
 
-          <div className='policy'>
+          <div className='footer__policy'>
             Политика АО «ЦПЛ» в отношении обработки персональных данных и
             Согласие на обработку данных участника Программы «Спасибо от Сбербанка»
           </div>

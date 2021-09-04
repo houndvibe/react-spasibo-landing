@@ -3,9 +3,11 @@
   border: 1px dotted black;
   border-radius: 10px;
 }
+
 .address:hover{
   border: 1px solid rgba(0, 211, 109, 1);
 }
+
 .address__content{
   display: flex;
   font-size: 14px;
@@ -15,33 +17,36 @@
   letter-spacing: 0px;
   text-align: left;
 }
+
 .address__info{
-margin-left: 10px;
+  margin-left: 10px;
 }
+
 .address__stations{
   display: flex;
 }
-.station{
-margin-right: 10px;
+
+.address__station{
+  margin-right: 10px;
 }
-.stationImg{
+
+.station__img{
   margin-right: 4px;
 }
-.address__link{
-  color:  rgba(0, 211, 109, 1);
-  text-decoration: none;
-  border-bottom: 1px solid rgba(0, 211, 109, 1);
-  padding-bottom: 2px;
-}
+
 .address__way{
-  font-size: 12px;
-  margin-top: 10px;
-  width: 270px;
   display: flex;
   justify-content: flex-end;
+  width: 270px;
+  margin-top: 10px;
   color:grey;
+  font-size: 12px;
   line-height: 16px;
 }
-.way_wrapper{
+
+.address__way-wrapper{
   border-bottom: 1px solid rgba(128, 128, 128, 0.562);
+}
+.address__way-drower:hover{
+  color:black
 }

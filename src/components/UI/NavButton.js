@@ -3,11 +3,11 @@ import '../../css/NavButton.css'
 
 const NavButton = ({ title, active, onClick }) => {
 
-  const cls = ['navbutton']
-  active && cls.push('navbutton-active')
+  const cls = ['button-nav']
+  active && cls.push('button-nav-active')
 
   return (
-    <div className='navbuttonWrapper'>
+    <div className='button-nav-wrapper'>
       <button className={cls.join(' ')} onClick={onClick}>
         {title}
       </button>

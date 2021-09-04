@@ -23,7 +23,7 @@ const Switch = ({ leftText, rightText }) => {
           checked={isChecked}
           onChange={() => setIsChecked(!isChecked)}
         />
-        <span class="slider round"></span>
+        <span class="switch__slider"></span>
       </label>
       <div className={clsRight.join(' ')}>
         {rightText}

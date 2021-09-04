@@ -9,20 +9,20 @@ const Plate = ({
 
   let cls = ['plate']
   content.length === 5
-    ? cls.push('long')
-    : cls.push('short')
+    ? cls.push('plate-long')
+    : cls.push('plate-short')
 
   return (
-    <div className='plateWrapper'>
+    <div className='plate__wrapper'>
 
       <div className={cls.join(' ')}>
         <div className='plate__top'>
           {content.map(src => {
             return (
               <img
+                className='img-round-l'
                 src={src}
                 alt='logo'
-                className='plate__img'
                 key={Math.random() + src}
                 onClick={onClick}
               />
@@ -32,13 +32,13 @@ const Plate = ({
       </div>
 
       <div className='plate__bottom'>
-        <div className=' rounding rounding-left'>
+        <div className=' plate__rounding rounding-left'>
           {'...'}
         </div>
         <div className='plate__text'>
           {text}
         </div>
-        <div className='rounding rounding-right'>
+        <div className='plate__rounding rounding-right'>
           {'...'}
         </div>
       </div>

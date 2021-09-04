@@ -5,9 +5,9 @@ import '../../css/SocialsButton.css'
 const AppStoreButton = (props) => {
 
   return (
-    <div className='socialsButton'>
+    <div className='button-socials'>
       <img
-        className='socialImg'
+        className='img-socials'
         src={AppStoreIcon}
         alt='app-store'
       />

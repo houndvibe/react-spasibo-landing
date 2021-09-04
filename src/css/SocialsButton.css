@@ -1,6 +1,7 @@
-.socialsButton{
-cursor: pointer;
+.button-socials{
+  cursor: pointer;
 }
-.socialImg{
+
+.img-socials{
   border-radius: 6px;
 }

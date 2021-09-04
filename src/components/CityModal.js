@@ -1,20 +1,20 @@
 import React from 'react';
 import Button from './UI/Button';
-import '../css/CityPopup.css'
+import '../css/CityModal.css'
 
-const CityPopup = ({ isVisible, currentCity, onClick }) => {
+const CityModal = ({ isVisible, currentCity, onClick }) => {
 
-  let cls = ['cityPopup']
-  isVisible && cls.push('cityPopup_active')
+  let cls = ['modal-city']
+  isVisible && cls.push('modal-city-active')
 
   return (
     <div className={cls.join(' ')}>
 
-      <div className='cityPopup_text'>
-        Ваш город - <span className='cityPopup_text-bold'>{`${currentCity}`}</span>?
+      <div className='modal-city__text'>
+        Ваш город - <span className='modal-city__text-bold'>{`${currentCity}`}</span>?
       </div>
 
-      <div className='cityPopup_buttons'>
+      <div className='modal-city__buttons'>
         <Button
           title={'Да'}
           onClick={onClick}
@@ -29,4 +29,4 @@ const CityPopup = ({ isVisible, currentCity, onClick }) => {
   );
 }
 
-export default CityPopup;
+export default CityModal;

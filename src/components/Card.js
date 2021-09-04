@@ -6,23 +6,23 @@ const Card = ({ percent, logo, name, onClick }) => {
   return (
     <div className='card' onClick={onClick}>
 
-      <div className='number'>
+      <div className='card__number'>
         {`${percent}%`}
       </div>
 
-      <div className='text'>
+      <div className='card__text'>
         Спасибо от суммы покупки
       </div>
 
-      <div className='logoWrapper' >
+      <div className='card__logo' >
         <img
-          className='card__logo'
+          className='img-round-l mt20'
           src={logo}
           alt='logo'
         />
       </div>
 
-      <div className='name' >
+      <div className='card__name mt30' >
         {name}
       </div>
 

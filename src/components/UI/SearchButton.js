@@ -5,8 +5,12 @@ import '../../css/SearchButton.css'
 const SearchButton = ({ onClick }) => {
 
   return (
-    <div className='searchbutton' onClick={onClick}>
-      <img src={IconSearch} alt='search' />
+    <div className='button-search' onClick={onClick}>
+      <img
+        className='img-search'
+        src={IconSearch}
+        alt='search'
+      />
     </div>
   );
 

@@ -5,8 +5,12 @@ import '../../css/SocialsButton.css'
 const OkButton = (props) => {
 
   return (
-    <div className='socialsButton'>
-      <img src={OkIcon} alt='ok' className='socialImg' />
+    <div className='button-socials'>
+      <img
+        className='img-socials'
+        src={OkIcon}
+        alt='ok'
+      />
     </div >
   );
 

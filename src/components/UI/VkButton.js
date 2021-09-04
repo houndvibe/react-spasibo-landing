@@ -6,8 +6,12 @@ import '../../css/SocialsButton.css'
 const VkButton = (props) => {
 
   return (
-    <div className='socialsButton'>
-      <img src={VkIcon} alt='vk' className='socialImg' />
+    <div className='button-socials'>
+      <img
+        className='img-socials'
+        src={VkIcon}
+        alt='vk'
+      />
     </div >
   );
 

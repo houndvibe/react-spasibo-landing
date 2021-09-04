@@ -13,13 +13,21 @@ const Offer = ({
     <div className='offer' onClick={onClick}>
 
       <div className='offer__preview'>
-        <img src={preview} alt='preview' className='prev_img' />
+        <img
+          className='img-sq-m'
+          src={preview}
+          alt='preview'
+        />
       </div>
 
       <div className='offer__info'>
 
         <div className='offer__logo'>
-          <img src={logo} alt='logo' className='logo_img' />
+          <img
+            className='img-round-s'
+            src={logo}
+            alt='logo'
+          />
         </div>
 
         <div className='offer__details'>

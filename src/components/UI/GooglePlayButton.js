@@ -5,8 +5,12 @@ import '../../css/SocialsButton.css'
 const GooglePlayButton = (props) => {
 
   return (
-    <div className='socialsButton'>
-      <img src={GooglePlayIcon} alt='google-play' />
+    <div className='button-socials'>
+      <img
+        className='img-socials'
+        src={GooglePlayIcon}
+        alt='google-play'
+      />
     </div >
   );
 

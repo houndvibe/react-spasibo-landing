@@ -5,11 +5,11 @@ import '../../css/SocialsButton.css'
 const FbButton = (props) => {
 
   return (
-    <div className='socialsButton'>
+    <div className='button-socials'>
       <img
-        className='socialImg'
         src={FbIcon}
         alt='facebook'
+        className='img-socials'
       />
     </div >
   );

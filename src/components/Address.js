@@ -21,8 +21,8 @@ const Address = ({ data }) => {
           <div className='address__stations'>
             {data.stations.map(station => {
               return (
-                <div className='station'>
-                  <img src={station.img} alt='M' className='stationImg' />
+                <div className='address__station'>
+                  <img src={station.img} alt='M' className='station__img' />
                   <span>{station.name}</span>
                 </div>
               )
@@ -38,14 +38,14 @@ const Address = ({ data }) => {
           </div>
 
           <div className='address__links'>
-            <a href={data.link.src} className='address__link'>
+            <a href={data.link.src} className='link'>
               {data.link.text}
             </a>
           </div>
 
           <div className='address__way'>
-            <span className='way_wrapper'>
-              <a href='/'>Проложить маршрут</a>
+            <span className='address__way-wrapper'>
+              <a href='/' className='address__way-drower'>Проложить маршрут</a>
             </span>
           </div>
 
