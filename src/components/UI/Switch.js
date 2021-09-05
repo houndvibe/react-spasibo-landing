@@ -17,13 +17,13 @@ const Switch = ({ leftText, rightText }) => {
       <div className={clsLeft.join(' ')}>
         {leftText}
       </div>
-      <label class="switch__label">
+      <label className="switch__label">
         <input
           type="checkbox"
           checked={isChecked}
           onChange={() => setIsChecked(!isChecked)}
         />
-        <span class="switch__slider"></span>
+        <span className="switch__slider"></span>
       </label>
       <div className={clsRight.join(' ')}>
         {rightText}

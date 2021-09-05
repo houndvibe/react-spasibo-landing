@@ -37,6 +37,8 @@ const Header = ({
     query: '(min-width: 1000px)'
   })
 
+  document.body.style.overflow = isSearchActive ? "hidden" : "scroll"
+
   return (
     <div
       className='header'
@@ -52,7 +54,7 @@ const Header = ({
             <div className='header__navigation mt10'>
               {menuElements.map((element) => {
                 return (
-                  <HeaderLink title={element.title} path={element.path} />
+                  <HeaderLink title={element.title} path={element.path} key={Math.random() + element.title} />
                 )
               })}
             </div>
@@ -89,6 +91,9 @@ const Header = ({
               currentCity={'Санкт-Петербург'}
               onClick={onShowCityPopup}
             />
+            <div className='search'>
+              <SearchButton onClick={onSearchOn} />
+            </div>
             <GrLogin onClick={() => alert('Невозможно выполнить вход в демо режиме')} />
           </>
         }

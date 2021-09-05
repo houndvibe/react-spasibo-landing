@@ -14,7 +14,7 @@ const DropdownMenu = ({ data }) => {
         <Dropdown.Menu className='dropdown__menu'>
           {data.map((element) => {
             return (
-              <Dropdown.Item href={element.path} className='dropdown__item'>
+              <Dropdown.Item href={element.path} className='dropdown__item' key={Math.random() + element.title}>
                 {element.title}
               </Dropdown.Item>
             )

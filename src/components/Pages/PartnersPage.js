@@ -92,6 +92,7 @@ const PartnersPage = ({
                   name={offer.name}
                   text={offer.text}
                   onClick={demoActionHandler}
+                  key={Math.random() + offer.name}
                 />
               )
             })}
@@ -111,6 +112,7 @@ const PartnersPage = ({
                 text={plate.text}
                 content={plate.content}
                 onClick={demoActionHandler}
+                key={Math.random() + plate.text}
               />
             )
           })}
