@@ -29,6 +29,20 @@ import AppleMarker from '../assets/img/address_apple.png'
 import sub_red from '../assets/img/subway_red.png'
 import sub_green from '../assets/img/subway_green.png'
 
+export const menuElements = [
+  { title: 'Купоны и сертификаты', path: '/coupons' },
+  { title: 'Впечатления', path: '/impressions' },
+  { title: 'Авиабилеты', path: '/flights' },
+  { title: 'Ж/д билеты', path: '/tickets' },
+  { title: 'Отели', path: '/hotels' },
+  { title: 'Каршеринг', path: '/carsharing' },
+  { title: 'Театры', path: '/goods' },
+  { title: 'Страхование', path: '/insurance' },
+  { title: 'Как подключиться', path: '/connect' },
+  { title: 'Партнеры', path: '/' },
+
+]
+
 export const navButtonsData = [
   'Все партнеры',
   'Популярные',

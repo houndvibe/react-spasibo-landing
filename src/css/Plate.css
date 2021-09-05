@@ -28,6 +28,13 @@
   background: white;
   height: 15px;
 }
+.plate__bottom-s{
+  font-weight: 500;
+  padding: 6px;
+  border-radius: 6px;
+  margin-top: 10px;
+  background: white;
+}
 
 .plate__text{
   padding: 5px 10px;

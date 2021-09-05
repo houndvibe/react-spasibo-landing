@@ -1,0 +1,33 @@
+.dropdown__button{
+background: none;
+border: none;
+}
+
+.dropdown__button:hover{
+  color:white;
+  background: #00D36D;
+}
+.dropdown__button:active{
+  color:white;
+  background: #00D36D;
+}
+
+.dropdown__menu{
+  z-index: 10;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background: white;
+  border-radius: 10px;
+}
+.dropdown__item{
+  padding: 4px;
+  margin-top: 10px;
+  border-bottom: 1px solid grey;
+}
+
+.dropdown__item:hover{
+  color:white;
+  background: #00d36d65;
+}

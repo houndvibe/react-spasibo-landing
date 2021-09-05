@@ -13,6 +13,7 @@ import CarsharingPage from './components/EmptyRoutesPages/CarsharingPage'
 import InsurancePage from './components/EmptyRoutesPages/InsurancePage'
 import TicketsPage from './components/EmptyRoutesPages/TicketsPage'
 import ActionPage from './components/Pages/ActionPage';
+import './css/Media.css'
 import './css/App.css';
 
 

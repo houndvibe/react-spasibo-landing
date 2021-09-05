@@ -1,11 +1,17 @@
 import React from 'react';
 import '../css/Plate.css'
+import { useMediaQuery } from 'react-responsive'
 
 const Plate = ({
   text,
   content,
   onClick
 }) => {
+
+
+  const isMobile = useMediaQuery({
+    query: '(min-width: 700px)'
+  })
 
   let cls = ['plate']
   content.length === 5
@@ -30,19 +36,22 @@ const Plate = ({
           })}
         </div>
       </div>
-
-      <div className='plate__bottom'>
-        <div className=' plate__rounding rounding-left'>
-          {'...'}
+      {isMobile
+        ? <div className='plate__bottom'>
+          <div className=' plate__rounding rounding-left'>
+            {'...'}
+          </div>
+          <div className='plate__text'>
+            {text}
+          </div>
+          <div className='plate__rounding rounding-right'>
+            {'...'}
+          </div>
         </div>
-        <div className='plate__text'>
+        : <div className='plate__bottom-s'>
           {text}
         </div>
-        <div className='plate__rounding rounding-right'>
-          {'...'}
-        </div>
-      </div>
-
+      }
     </div>
   );
 }

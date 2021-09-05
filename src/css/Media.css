@@ -1,0 +1,145 @@
+@media (max-width: 1240px){
+  .addresses{
+    flex-direction: column;
+    align-items: center;
+  }
+  .address{
+    margin-top: 20px;
+    width: 270px;
+  }
+  .address__content{
+    display: flex;
+    font-size: 12px
+  }
+  .address__way{
+    display: flex;
+    justify-content: flex-start;
+    width:100%
+  }
+}
+
+
+@media (max-width: 1180px){
+  .navlink{
+   font-size: 13px;
+  }
+  .cards__content{
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .card{
+    margin-top: 10px;
+  }
+  .offers__content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .offer{
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 1000px){
+  .header{
+    height: 70px;
+  }
+  .header__content{
+    justify-content: space-around
+  } 
+  .dropdown{
+    margin-top: 10px;
+  }
+  .header__logo{
+    margin-top: 10px;
+    padding-top: 0px;
+  }
+  .header__vidgets-top{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 60px;
+  }
+  .header__vidgets{
+    height: 100%;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .navlink{
+   font-size: 13px;
+  }
+  .img-logo{
+    height: 42px;
+    width: 100px;
+  }
+}
+
+@media (max-width: 800px){
+  .emptyRoutePage{
+    font-size: 46px;
+  }
+  
+  .footer{
+    height: 500px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .footer__content{
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__navigation{
+    justify-content: center;
+  }
+  .footer__left{
+    justify-content: center;
+  }
+  .code__number{
+   text-align: center;
+  }
+  .code__text{
+    text-align: center;
+  }
+  .footer__logo{
+    text-align: center;
+  }
+  .footer__right{
+    justify-content: center;
+    padding: 0px;
+  }
+  .footer__socials{
+    align-items: center;
+    flex-direction: column;
+  }
+  .footer__policy{
+    margin-top: 10px;
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 700px){
+
+  .plate{
+    padding: 10px;
+  }
+  .plate__top{
+    display: flex;
+    justify-content: space-around
+  }
+  .plate-long{
+    width: 290px;
+  }
+  .plate-short{
+    width: 290px;
+  }
+  .plate .img-round-l{
+    width: 56px;
+    height: 56px;
+  }
+}
+
+@media (max-width: 320px){
+  .footer__navigation{
+    margin-top: 80px;
+  }
+}

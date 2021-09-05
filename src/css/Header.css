@@ -11,10 +11,10 @@
   align-items: center;
   justify-content: center;
   height: 90px;
+  width: 100%;
 }
 
 .header__logo{
-  height: 100%;
   padding-top: 10px;
 }
 
