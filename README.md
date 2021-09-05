@@ -1,6 +1,6 @@
 # Sber-spasibo demo landing 
 
----Front-end: React v17.0.2 /Redux v4.1.1/
+---Front-end: React v17.0.2 /Redux v4.1.1
 
 =======
 
